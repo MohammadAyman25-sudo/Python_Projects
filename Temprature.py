@@ -1,6 +1,4 @@
-choice = 1
-
-while choice != 0:
+while True:
     temp = input("Choose the unit to change into :\n 1.Fahrenheit(f)\n 2.Celsius(c)\n 3.from Celsius to Kelvin(c to k)\n 4.from Fahrenheit to Kelvin(f to k)\n 5.Quit(q)\n")
 
     if temp == "f":

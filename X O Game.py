@@ -51,7 +51,7 @@ def win(mat):
         print("Game Over")
         time.sleep(5.0)
         exit()
-#win(mat)
+
 # Game Loop Statment Codes
 while True:
     show(mat)
@@ -62,11 +62,11 @@ while True:
             turn=""
             continue
     try:
-        num = int(input(turn+" turn, Enter a Number : "))
+        num = int(input(turn, "turn, Enter a Number : "))
     except ValueError:
         print("\nYou can only enter integers\n")
         show(mat)
-        num = int(input(turn+" turn, Enter a Number : "))
+        num = int(input(turn, "turn, Enter a Number : "))
     play(mat, turn, num)
     if turn == "X":
         turn="O"

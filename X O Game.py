@@ -48,6 +48,7 @@ def win(mat):
         exit()
     if mat[0][2] == mat[1][1] == mat[2][0]:
         show(mat)
+        print(mat[0][2], "Wins")
         print("Game Over")
         time.sleep(5.0)
         exit()
@@ -62,11 +63,11 @@ while True:
             turn=""
             continue
     try:
-        num = int(input(turn, "turn, Enter a Number : "))
+        num = int(input(turn+" turn, Enter a Number : "))
     except ValueError:
         print("\nYou can only enter integers\n")
         show(mat)
-        num = int(input(turn, "turn, Enter a Number : "))
+        num = int(input(turn+" turn, Enter a Number : "))
     play(mat, turn, num)
     if turn == "X":
         turn="O"

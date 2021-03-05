@@ -72,13 +72,13 @@ def BuClick(id):
         StayLayout(id,'X')
         ActivePlayer = 2
         p1.append(id)
-        print("p1:{}".format(p1))
+        print(f"p1:{p1}")
         CheckWinner(id)
     elif (ActivePlayer == 2):
         StayLayout(id,'O')
         ActivePlayer = 1
         p2.append(id)
-        print("p2:{}".format(p2))
+        print(f"p2:{p2}")
         CheckWinner(id)
 
 def StayLayout(id, text):
